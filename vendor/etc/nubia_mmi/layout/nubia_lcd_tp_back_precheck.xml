@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (c) 2016, nubia
+ File name:nubia_lcd_tp_precheck.xml
+ Witer: wangfangyou
+ Date: 2016-08-31
+ Abstract: for nubia ui lcd tp precheck child menu
+-->
+<layout>
+  <button
+        name="title"
+        text="lcd_tp_back_precheck"
+        w_rel="100"
+        h_rel="15"
+        x_rel="0"
+        y_rel="0"
+        color="0x000000ff"/>
+
+  <textview
+        name="nubia_status_head"
+        text="电量:"
+        w_rel="10"
+        h_rel="5"
+        x_rel="75"
+        y_rel="14"/>
+
+  <textview
+        name="nubia_status"
+        text="0%"
+        w_rel="10"
+        h_rel="5"
+        x_rel="85"
+        y_rel="14"/>
+
+  <button
+        name="line"
+        text=""
+        w_rel="100"
+        h_rel="1"
+        x_rel="0"
+        y_rel="15"
+        color="0x11aa22ff"/>
+
+  <button
+        name="lcd_display"
+        text="lcd_display"
+        w_rel="100"
+        h_rel="10"
+        x_rel="0"
+        y_rel="20"
+        link = "LCD"
+        color="0x000000ff"/>
+
+  <button
+        name="tp_test"
+        text="tp_test"
+        w_rel="100"
+        h_rel="10"
+        x_rel="0"
+        y_rel="30"
+        onclick="nubia_tp_back_precheck"
+        color="0x000000ff"/>
+
+  <parent
+        name="main.xml" />
+
+  </layout>

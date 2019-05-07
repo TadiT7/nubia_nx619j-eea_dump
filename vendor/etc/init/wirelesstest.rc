@@ -1,0 +1,47 @@
+# btduttest
+service btduttest /vendor/bin/bt_dut_test
+    class late_start
+    user root
+    group root
+    disabled
+    seclabel u:r:btduttest:s0
+    oneshot
+
+on property:persist.service.btcmd=1
+    start btduttest
+
+on property:persist.service.btcmd=0
+    stop  btduttest
+
+# wirelesstest
+service wirelesstest /vendor/bin/wireless_test
+    class late_start
+    user root
+    group root
+    socket wirelesstest stream 666 bluetooth bluetooth
+    disabled
+    seclabel u:r:wirelesstest:s0
+    oneshot
+
+on property:sys.wltest.enable=1
+    start wirelesstest
+
+on property:sys.wltest.enable=0
+    stop wirelesstest
+
+# ftmdtest
+service nbftmd /vendor/bin/ftmdaemon -n
+    class late_start
+    user root
+#group bluetooth net_bt_admin misc net_bt_stack qcom_diag net_bt
+    group root
+    disabled
+    seclabel u:r:ftmdtest:s0
+    oneshot
+
+on property:persist.service.ftmdaemon=1
+    start nbftmd
+
+on property:persist.service.ftmdaemon=0
+    stop nbftmd
+#Nubia add end

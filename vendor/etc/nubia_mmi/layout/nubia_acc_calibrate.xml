@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2015 Qualcomm Technologies, Inc. All Rights Reserved.
+    Qualcomm Technologies Proprietary and Confidential.
+-->
+<!--
+ Copyright (c) 2016, nubia
+ File name:nubia_main.xml
+ Witer: baoqi
+ Date: 2016-08-31
+ Abstract: for nubia ui main menu
+-->
+<layout>
+  <button
+        name="title"
+        text="acc_calibrate_indicate"
+        w_rel="100"
+        h_rel="15"
+        x_rel="0"
+        y_rel="0"
+        color="0x4B67B37D"/>
+
+  <button
+        name="startcalibrate"
+        text="startcalibrate"
+        onclick="acc_calibrate"
+        w_rel="100"
+        h_rel="10"
+        x_rel="0"
+        y_rel="30"
+        color="0x228b229f"/>
+
+  <button
+        name="show_result"
+        text="calibrate_result"
+        w_rel="100"
+        h_rel="10"
+        x_rel="0"
+        y_rel="60"
+        color="0x000000ff"/>
+
+  <parent
+	name="nubia_sensor_cal_index.xml" />
+</layout>

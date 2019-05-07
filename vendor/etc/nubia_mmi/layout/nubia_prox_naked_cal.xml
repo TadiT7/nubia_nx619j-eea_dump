@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2015 Qualcomm Technologies, Inc. All Rights Reserved.
+    Qualcomm Technologies Proprietary and Confidential.
+-->
+<!--
+ Copyright (c) 2016, nubia
+ File name:nubia_main.xml
+ Witer: baoqi
+ Date: 2016-08-31
+ Abstract: for nubia ui main menu
+-->
+<layout>
+  <button
+        name="title"
+        text="prox_naked_cal"
+        w_rel="100"
+        h_rel="15"
+        x_rel="0"
+        y_rel="0"
+        color="0x4B67B37D"/>
+
+  <button
+        name="ps_data"
+        text="ps_data"
+        w_rel="100"
+        h_rel="10"
+        x_rel="0"
+        y_rel="30"
+		color="0x000000ef"/>
+  <button
+        name="show_result"
+        text="prox_cal_result"
+        w_rel="100"
+        h_rel="10"
+        x_rel="0"
+        y_rel="40"
+        color="0x000000ff"/>
+  <button
+        name=""
+        text=""
+        w_rel="100"
+        h_rel="10"
+        x_rel="0"
+        y_rel="50"
+        color="0x000000ff"/>
+  <button
+        name="calibrate"
+        text="calibrate"
+        onclick="do_prox_naked_cal"
+        w_rel="100"
+        h_rel="15"
+        x_rel="0"
+        y_rel="85"
+        color="0x6a5acdff"/>
+
+  <parent
+	name="nubia_sensor_cal_index.xml" />
+</layout>

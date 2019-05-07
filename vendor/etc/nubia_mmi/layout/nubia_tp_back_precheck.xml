@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (c) 2016, nubia
+ File name:nubia_lcd_tp_back_precheck.xml
+ Witer: wangfangyou
+ Date: 2016-08-31
+ Abstract: for nubia ui lcd tp precheck child menu
+-->
+<layout>
+
+   <button
+        name="display"
+        text=""
+        w_rel="100"
+        h_rel="100"
+        x_rel="0"
+        y_rel="0"
+        color="0xffffffff" />
+
+  <parent
+        name="main.xml" />
+  </layout>

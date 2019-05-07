@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2015 Qualcomm Technologies, Inc. All Rights Reserved.
+    Qualcomm Technologies Proprietary and Confidential.
+-->
+<layout>
+    <include layout="header.xml"/>
+    <button
+        name="acc_cal"
+        text="acc_calibrate_indicate"
+        w_rel="90"
+        h_rel="15"
+        x_rel="5"
+        y_rel="50"
+        color="0x007D7DFF" />
+    <textview
+        name="display"
+        text=""
+        w_rel="100"
+        h_rel="70"
+        x_rel="4"
+        y_rel="18" />
+  <button
+        name="acc_cal_back"
+        text="btn_back"
+        onclick="do_back"
+        w_rel="100"
+        h_rel="10"
+        x_rel="0"
+        y_rel="90"
+        color="0x6a5acdff"/>
+    <parent
+        name="nubia_sensor_cal_index.xml"/>
+</layout>

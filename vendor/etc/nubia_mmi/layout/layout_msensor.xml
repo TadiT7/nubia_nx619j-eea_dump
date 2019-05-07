@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2015 Qualcomm Technologies, Inc. All Rights Reserved.
+    Qualcomm Technologies Proprietary and Confidential.
+-->
+<layout>
+    <include layout="header.xml"/>
+    <button
+        name="instruction"
+        text="msensor_instruction"
+        w_rel="100"
+        h_rel="8"
+        x_rel="0"
+        y_rel="11"
+        color="0x4B67B37D" />
+    <textview
+        name="display"
+        text=""
+        w_rel="100"
+        h_rel="22"
+        x_rel="4"
+        y_rel="20" />
+    <button
+        name="west"
+        text="west"
+        w_rel="24"
+        h_rel="10"
+        x_rel="0"
+        y_rel="62"
+        color="0x4B67B37D" />
+    <button
+        name="east"
+        text="east"
+        w_rel="24"
+        h_rel="10"
+        x_rel="25"
+        y_rel="62"
+        color="0x4B67B37D" />
+    <button
+        name="north"
+        text="north"
+        w_rel="24"
+        h_rel="10"
+        x_rel="50"
+        y_rel="62"
+        color="0x4B67B37D" />
+     <button
+        name="south"
+        text="south"
+        w_rel="24"
+        h_rel="10"
+        x_rel="75"
+        y_rel="62"
+        color="0x4B67B37D" />
+    <button
+        name="indication"
+        text=""
+        w_rel="100"
+        h_rel="10"
+        x_rel="0"
+        y_rel="73"
+        color="0x4B67B37D" />
+   <include layout="footer.xml"/>
+   <parent
+		name="nubia_test_list.xml" />
+</layout>

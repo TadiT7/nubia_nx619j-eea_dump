@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+/******************************************************************************
+* Copyright (c) 2017-2018 Qualcomm Technologies, Inc.
+* All Rights Reserved
+* Confidential and Proprietary - Qualcomm Technologies, Inc.
+******************************************************************************/
+-->
+<!--
+   IMPORTANT NOTE:
+     this file needs to be updated with calibration values specific to the
+     individual device!
+-->
+<DeviceConfiguration>
+    <Camera id="0" name="left">
+        <Calibration size="640 480 " principal_point="320.3172 236.58478 " focal_length="269.62891 269.62891 " fish_eye="true" radial_distortion_8="0.076505646 -0.050256696 0.23803455 -0.13134412 0 0 0 0 " />
+        <Rig stereo_rig="0 0 0 0 0 0 " />
+    </Camera>
+    <Image />
+    <SFConfig>
+        <Stateinit ombc="1.7523631 -1.89599 0.071323365 " tbc="0.011388524 -0.05343863 -0.068415083 " aBias="0.14205168 0.11820986 -0.31702432 " wBias="-0.00017690445 0.02965593 0.0076321699 " ka="-0.0045475163 -0.0018873089 -0.00057031418 " kg="-0.0039448594 -0.00036525866 -0.0024788459 " delta="-0.003896" />
+    </SFConfig>
+</DeviceConfiguration>
+<!--Device ID not_configured
+Tue, 26 Jun 2018 23:35:23 GMT
+
+***Pattern detection***
+Pattern detection success 895/905 (98.895%)
+numFailForMultipleApexCandidates 10/905 (1.10497%)
+
+
+***Pattern selection***
+Remove redundant detections: Selected 173/895 timestamps
+
+***Intrinsic calibration***
+Prior-numRDParams4 2159 constraints, 0.258562 pixels RMS residual.
+Full-numRDParams4 127905 constraints, 0.203806 pixels RMS residual.
+
+
+***Extrinsic/IMU calibration***
+CalibrateIMU-OptimizeIMUOnly_Init 894 constraints, 0.189402 pixels RMS residual.
+Ombc/Tbc as (R | t) matrix:
+(0.00278002, -0.935017, -0.354593, 0.0113885)
+(-0.905734, 0.147937, -0.397192, -0.0534386)
+(0.423839, 0.322271, -0.846465, -0.0684151)
+
+
+
+***Pattern detection time 7.33122s, calibration time 1.37742s, total 8.70864s-->

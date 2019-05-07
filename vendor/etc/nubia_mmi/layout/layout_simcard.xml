@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2015 Qualcomm Technologies, Inc. All Rights Reserved.
+    Qualcomm Technologies Proprietary and Confidential.
+-->
+<layout>
+   <include layout="header.xml"/>
+   <textview
+        name="display"
+        text=""
+        w_rel="100"
+        h_rel="20"
+        x_rel="4"
+        y_rel="12" />
+	<textview
+        name="sim_0"
+        text="SIM卡1状态:"
+        w_rel="20"
+        h_rel="10"
+        x_rel="10"
+        y_rel="30" />
+	<textview
+        name="sim_1"
+        text="SIM卡2状态:"
+        w_rel="20"
+        h_rel="10"
+        x_rel="10"
+        y_rel="55" />
+    <button
+        name="sim_status0"
+        text="Not inserted"
+        w_rel="40"
+        h_rel="10"
+        x_rel="55"
+        y_rel="25"
+        color="0xFF0000FF" />
+    <button
+        name="sim_status1"
+        text="Not inserted"
+        w_rel="40"
+        h_rel="10"
+        x_rel="55"
+        y_rel="50"
+        color="0xFF0000FF" />
+	<button
+        name="instruction"
+        text="sim_instruction"
+		w_rel="100"
+        h_rel="16"
+        x_rel="0"
+        y_rel="84"
+        color="0x4B67B37D" />
+
+    <parent
+		name="nubia_test_list.xml" />
+</layout>

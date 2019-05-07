@@ -1,0 +1,14 @@
+# bt config service
+service btcaptureuart /system/bin/sh /system/etc/bluetooth/nbbt_capture_uart.sh
+    class late_start
+    user root
+    group root system bluetooth
+    disabled
+    oneshot
+    seclabel u:r:btcaptureuart:s0
+
+on property:sys.bt.nblog.capture.uart=1
+    start btcaptureuart
+
+on property:sys.bt.nblog.capture.uart=0
+    start btcaptureuart

@@ -1,0 +1,9 @@
+
+service fstrim /system/bin/fstrim start
+    class core
+    user root
+    group root system wakelock
+    oneshot
+    writepid /dev/stune/top-app/tasks
+    seclabel u:r:fstrim:s0
+

@@ -1,0 +1,14 @@
+service bootanim /system/bin/bootanimation
+    class core animation
+    user graphics
+    group graphics audio
+    disabled
+    oneshot
+    writepid /dev/stune/top-app/tasks
+service shutdownanim /system/bin/bootanimation shut
+    class core animation
+    user graphics
+    group graphics audio
+    disabled
+    oneshot
+    writepid /dev/stune/top-app/tasks

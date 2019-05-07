@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (c) 2016, nubia
+ File name:nubia mmi main.xml
+ Witer: wangfangyou
+ Date: 2016-08-31
+ Abstract: for nubia ui main menu
+-->
+<layout>
+  <button
+        name="title"
+        text="product_mode"
+        w_rel="100"
+        h_rel="15"
+        x_rel="0"
+        y_rel="0"
+        color="0x000000ff"/>
+
+  <textview
+        name="nubia_status_head"
+        text="电量:"
+        w_rel="10"
+        h_rel="5"
+        x_rel="75"
+        y_rel="14"/>
+
+  <textview
+        name="nubia_status"
+        text="0%"
+        w_rel="10"
+        h_rel="5"
+        x_rel="85"
+        y_rel="14"/>
+
+  <button
+        name="line"
+        text=""
+        w_rel="100"
+        h_rel="1"
+        x_rel="0"
+        y_rel="15"
+        color="0x11aa22ff"/>
+
+  <button
+        name="production_info"
+        text="production_info"
+        link="nubia_production_info.xml"
+        w_rel="100"
+        h_rel="10"
+        x_rel="0"
+        y_rel="20"
+        color="0x000000ff"/>
+
+  <button
+        name="part_test"
+        text="part_test"
+        link="nubia_part_test.xml"
+        w_rel="100"
+        h_rel="10"
+        x_rel="0"
+        y_rel="30"
+        color="0x000000ff"/>
+
+  <button
+        name="lcd_tp_precheck"
+        text="lcd_tp_precheck"
+        onclick="nubia_tp_precheck"
+        w_rel="100"
+        h_rel="10"
+        x_rel="0"
+        y_rel="40"
+        color="0x000000ff"/>
+
+  <button
+        name="virtual_card_signal_reg"
+        text="virtual_card_signal_reg"
+        link="nubia_virtual_card_signal_reg.xml"
+        w_rel="100"
+        h_rel="10"
+        x_rel="0"
+        y_rel="50"
+        color="0x000000ff"/>
+
+  <button
+        name="wifi_control_port_connect"
+        text="wifi_control_port_connect"
+        onclick="connect_wifi"
+        w_rel="100"
+        h_rel="10"
+        x_rel="0"
+        y_rel="60"
+        color="0x000000ff"/>
+
+  <button
+        name="nubia_sensor_cal"
+        text="nubia_sensor_cal"
+        link="nubia_sensor_cal_index.xml"
+        w_rel="100"
+        h_rel="10"
+        x_rel="0"
+        y_rel="70"
+        color="0x000000ff"/>
+  </layout>

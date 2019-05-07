@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2015 Qualcomm Technologies, Inc. All Rights Reserved.
+    Qualcomm Technologies Proprietary and Confidential.
+-->
+<layout>
+    <button
+        name="title"
+        text="hsensor"
+        w_rel="100"
+        h_rel="10"
+        x_rel="0"
+        y_rel="0"
+        color="0x4B67B37D" />
+    <button
+        name="instruction"
+        text="hsensor_instruction"
+        w_rel="100"
+        h_rel="10"
+        x_rel="0"
+        y_rel="11"
+        color="0x4B67B37D" />
+
+    <textview
+        name="display"
+        text=""
+        w_rel="100"
+        h_rel="18"
+        x_rel="4"
+        y_rel="28" />
+
+    <button
+        name="hall1"
+        text="hall1"
+        w_rel="49"
+        h_rel="10"
+        x_rel="0"
+        y_rel="62"
+        color="0x4B67B37D" />
+
+    <button
+        name="hall2"
+        text="hall2"
+        w_rel="49"
+        h_rel="10"
+        x_rel="51"
+        y_rel="62"
+        color="0x4B67B37D" />
+
+    <button
+        name="indication"
+        text=""
+        w_rel="100"
+        h_rel="10"
+        x_rel="0"
+        y_rel="73"
+        color="0x4B67B37D" />
+    <include layout="footer.xml"/>
+  	<parent
+		name="nubia_test_list.xml" />
+</layout>

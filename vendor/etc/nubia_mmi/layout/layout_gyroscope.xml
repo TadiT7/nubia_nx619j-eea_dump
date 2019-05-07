@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2015 Qualcomm Technologies, Inc. All Rights Reserved.
+    Qualcomm Technologies Proprietary and Confidential.
+-->
+<layout>
+    <include layout="header.xml"/>
+    <button
+        name="instruction"
+        text="gyro_instruction"
+        w_rel="100"
+        h_rel="10"
+        x_rel="0"
+        y_rel="10"
+        color="0x4B67B37D" />
+    <textview
+        name="display"
+        text=""
+        w_rel="100"
+        h_rel="29"
+        x_rel="0"
+        y_rel="30" />
+    <button
+        name="yaw"
+        text="yaw"
+        w_rel="32"
+        h_rel="10"
+        x_rel="1"
+        y_rel="62"
+        color="0x4B67B37D" />
+    <button
+        name="pitch"
+        text="pitch"
+        w_rel="32"
+        h_rel="10"
+        x_rel="34"
+        y_rel="62"
+        color="0x4B67B37D" />
+    <button
+        name="roll"
+        text="roll"
+        w_rel="32"
+        h_rel="10"
+        x_rel="67"
+        y_rel="62"
+        color="0x4B67B37D" />
+    <button
+        name="gyro_test"
+        text=""
+        w_rel="100"
+        h_rel="10"
+        x_rel="0"
+        y_rel="73"
+        color="0x4B67B37D" />
+   <include layout="footer.xml"/>
+   <parent
+		name="nubia_test_list.xml" />
+</layout>

@@ -1,0 +1,12 @@
+logVerboseMask=0x00000002
+logEntryExitMask=0x00000002
+systemLogEnable=FALSE
+logInfoMask=0x00000082
+logWarningMask=0x00000002
+logPerfInfoMask=0x00000002
+singleIFESupportedWidth=4656
+singleIFESupportedHeight=3496
+disablePDAF=0
+enableNCSService=TRUE
+overrideGPURotationUsecase=1
+enableDualIFE=FALSE

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (c) 2016, nubia
+ File name:nubia_virtual_card_signal_reg.xml
+ Witer: wangfangyou
+ Date: 2016-08-31
+ Abstract: for nubia ui virtual card signal reg child menu
+-->
+<layout>
+  <button
+        name="title"
+        text="virtual_card_signal_reg"
+        w_rel="100"
+        h_rel="15"
+        x_rel="0"
+        y_rel="0"
+        color="0x000000ff"/>
+
+  <textview
+        name="nubia_status_head"
+        text="电量:"
+        w_rel="10"
+        h_rel="5"
+        x_rel="75"
+        y_rel="14"/>
+
+  <textview
+        name="nubia_status"
+        text="0%"
+        w_rel="10"
+        h_rel="5"
+        x_rel="85"
+        y_rel="14"/>
+
+  <button
+        name="line"
+        text=""
+        w_rel="100"
+        h_rel="1"
+        x_rel="0"
+        y_rel="15"
+        color="0x11aa22ff"/>
+
+  <button
+        name="8960_2g_reg"
+        text="8960_2g_reg"
+        link="VIRTUAL_CARD0"
+        w_rel="100"
+        h_rel="10"
+        x_rel="0"
+        y_rel="20"
+        color="0x000000ff"/>
+
+  <button
+        name="8960_3g_reg"
+        text="8960_3g_reg"
+        link="VIRTUAL_CARD1"
+        w_rel="100"
+        h_rel="10"
+        x_rel="0"
+        y_rel="30"
+        color="0x000000ff"/>
+
+  <button
+        name="cmw500_4g_reg"
+        text="cmw500_4g_reg"
+        link="VIRTUAL_CARD2"
+        w_rel="100"
+        h_rel="10"
+        x_rel="0"
+        y_rel="40"
+        color="0x000000ff"/>
+
+  <parent
+        name="main.xml" />
+
+  </layout>

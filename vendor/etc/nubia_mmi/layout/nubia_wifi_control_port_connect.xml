@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (c) 2016, nubia
+ File name:nubia_wifi_control_port_connect.xml
+ Witer: wangfangyou
+ Date: 2016-08-31
+ Abstract: for nubia ui main menu
+-->
+<layout>
+  <button
+        name="title"
+        text="wifi_control_port_connect"
+        w_rel="100"
+        h_rel="15"
+        x_rel="0"
+        y_rel="0"
+        color="0x000000ff"/>
+
+  <textview
+        name="nubia_status_head"
+        text="电量:"
+        w_rel="10"
+        h_rel="5"
+        x_rel="75"
+        y_rel="14"/>
+
+  <textview
+        name="nubia_status"
+        text="0%"
+        w_rel="10"
+        h_rel="5"
+        x_rel="85"
+        y_rel="14"/>
+
+  <button
+        name="line"
+        text=""
+        w_rel="100"
+        h_rel="1"
+        x_rel="0"
+        y_rel="15"
+        color="0x11aa22ff"/>
+
+  <qrcodebox
+        name="qr_code"
+        w_rel="90"
+        h_rel="50"
+        x_rel="5"
+        y_rel="20"
+        qr_scale="6"
+        qr_color_0="0xefe7cbff"
+        qr_color_1="0x341000ff"
+        bg_color="0xefe7cbff"
+        />
+
+  <textview
+        name="wifi_ip_head"
+        text="WIFI IP:"
+        w_rel="20"
+        h_rel="8"
+        x_rel="5"
+        y_rel="78"/>
+
+  <textview
+        name="wifi_ip"
+        text="unkown"
+        w_rel="70"
+        h_rel="8"
+        x_rel="30"
+        y_rel="78"/>
+
+  <textview
+        name="wifi_socketlog_head"
+        text="SOCKETLOG:"
+        w_rel="30"
+        h_rel="5"
+        x_rel="5"
+        y_rel="85"/>
+
+  <textview
+        name="wifi_socketlog_status"
+        text="unkown"
+        w_rel="60"
+        h_rel="8"
+        x_rel="40"
+        y_rel="85"/>
+
+  <button
+        name="exit"
+        text="btn_exit"
+        onclick = "wifi_stop"
+        w_rel="40"
+        h_rel="10"
+        x_rel="30"
+        y_rel="89"
+        color="0x115522ff"/>
+
+  <parent
+        name="main.xml" />
+
+</layout>
+

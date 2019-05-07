@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (c) 2016, nubia
+ File name:nubia_auto_test_report.xml
+ Witer: wangfangyou
+ Date: 2016-11-15
+ Abstract: for nubia ui auto test result show
+-->
+<layout>
+  <button
+        name="title"
+        text="test_report"
+        w_rel="100"
+        h_rel="15"
+        x_rel="0"
+        y_rel="0"
+        color="0x000000ff"/>
+
+  <button
+        name="line"
+        text=""
+        w_rel="100"
+        h_rel="1"
+        x_rel="0"
+        y_rel="15"
+        color="0x11aa22ff"/>
+
+  <!--listview
+        name="auto_test_list"
+        w_rel="100"
+        h_rel="76"
+        x_rel="0"
+        y_rel="16"/-->
+
+  <textview
+        name="result"
+        text=""
+        w_rel="80"
+        h_rel="50"
+        x_rel="10"
+        y_rel="20"
+        color="0x113355ff"/>
+
+
+
+  <button
+        name="finish"
+        text="finish"
+        onclick="do_exit"
+        w_rel="40"
+        h_rel="8"
+        x_rel="30"
+        y_rel="92"
+        color="0x334455ff"/>
+
+  <!--parent
+        name="nubia_part_test.xml" /-->
+
+  </layout>

@@ -1,0 +1,13 @@
+mcfg_sw/generic/china/nubia/cmcc/commerci/volte_op/mcfg_sw.mbn
+mcfg_sw/generic/china/nubia/ct/commerci/hvolte_o/mcfg_sw.mbn
+mcfg_sw/generic/china/nubia/cu/commerci/openmkt/mcfg_sw.mbn
+mcfg_sw/generic/china/nubia/row/commerci/mcfg_sw.mbn
+mcfg_sw/generic/china/nubia/test/commerci/mcfg_sw.mbn
+mcfg_sw/generic/apac/reliance/commerci/mcfg_sw.mbn
+mcfg_sw/generic/sea/smartfre/commerci/vowifi/mcfg_sw.mbn
+mcfg_sw/generic/eu/vodafone/volte/germany/mcfg_sw.mbn
+mcfg_sw/generic/eu/vodafone/volte/spain/mcfg_sw.mbn
+mcfg_sw/generic/na/att/volte/mcfg_sw.mbn
+mcfg_sw/generic/na/sprint/commerci/mcfg_sw.mbn
+mcfg_sw/generic/na/tmo/commerci/mcfg_sw.mbn
+mcfg_sw/generic/na/verizon/hvolte/mcfg_sw.mbn

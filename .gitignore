@@ -1,0 +1,8 @@
+NON-HLOS.bin
+system/system/etc/faceclassifier/faceclassifier.dlc
+system/system/priv-app/GmsCore/GmsCore.apk
+system/system/priv-app/Camera/Camera.apk
+system/system/priv-app/Velvet/Velvet.apk
+system/system/ultrasonic/play.wav
+system/system/app/Chrome/Chrome.apk
+vendor/etc/dts/dts-eagle.lic

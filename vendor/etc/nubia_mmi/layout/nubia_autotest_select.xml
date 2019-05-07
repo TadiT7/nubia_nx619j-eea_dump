@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (c) 2016, nubia
+ File name:nubia_autotest_select.xml
+ Witer: wangfangyou
+ Date: 2016-11-12
+ Abstract: for nubia auto test select the retest or exit
+-->
+<layout>
+  <button
+        name="continue"
+        text="btn_continue"
+        onclick="do_continue"
+        h_rel="20"
+        w_rel="80"
+        x_rel="10"
+        y_rel="20"
+        color="0x008D5Dff" />
+  <button
+        name="retest"
+        text="btn_retest"
+        onclick="do_retest"
+        h_rel="20"
+        w_rel="80"
+        x_rel="10"
+        y_rel="40"
+        color="0x005D7Dff" />
+  <button
+        name="exit"
+        text="btn_exit"
+        onclick="do_exit"
+        h_rel="20"
+        w_rel="80"
+        x_rel="10"
+        y_rel="60"
+        color="0x777777ff" />
+
+   <parent
+        float="1"/>
+
+</layout>

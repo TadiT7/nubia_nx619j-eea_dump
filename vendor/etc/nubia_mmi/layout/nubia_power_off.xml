@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (c) 2016, nubia
+ File name:nubia_power_off.xml
+ Witer: wangfangyou
+ Date: 2016-10-09
+ Abstract: for nubia ui lcd tp precheck child menu
+-->
+<layout>
+  <button
+        name="bg"
+        w_rel="80"
+        h_rel="15"
+        x_rel="10"
+        y_rel="30"
+        color="0x252225ff"/>
+
+  <textview
+        name="t"
+        text="关机"
+        w_rel="70"
+        h_rel="5"
+        x_rel="15"
+        y_rel="34"/>
+
+  <button
+        name="line"
+        text=""
+        w_rel="80"
+        h_rel="1"
+        x_rel="10"
+        y_rel="36"
+        color="0x118888ff"/>
+
+  <textview
+        name="desc"
+        text="请选择关机模式"
+        w_rel="70"
+        h_rel="5"
+        x_rel="15"
+        y_rel="42"/>
+
+   <button
+        name="power_off"
+        text="reboot_poweroff_notice"
+        onclick="do_power_off"
+        w_rel="80"
+        h_rel="10"
+        x_rel="10"
+        y_rel="45"
+        color="0x333333ff"/>
+
+   <button
+        name="reboot_to_ffbm"
+        text="reboot_ffbm_notice"
+        onclick="do_reboot_to_ffbm"
+        w_rel="80"
+        h_rel="10"
+        x_rel="10"
+        y_rel="55"
+        color="0x444444ff"/>
+
+   <button
+        name="reboot_to_normal"
+        text="reboot_android_notice"
+        onclick="do_reboot_to_normal"
+        w_rel="80"
+        h_rel="10"
+        x_rel="10"
+        y_rel="65"
+        color="0x333333ff"/>
+
+   <parent
+        float="1"/>
+
+  </layout>

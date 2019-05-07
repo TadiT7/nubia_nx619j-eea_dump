@@ -1,0 +1,241 @@
+#Copyright (c) 2015-2016 Qualcomm Technologies, Inc.
+#All Rights Reserved.
+#Confidential and Proprietary - Qualcomm Technologies, Inc.
+
+tc 1
+#HeadSet Mic to  Speakers AFE loopback   open spk
+!AfeLoop
+Txdevice:5
+Rxdevice:35
+
+enable
+AIF1_CAP Mixer SLIM TX0:1 
+SLIM_0_TX Channels:One
+CDC_IF TX0 MUX:DEC0
+ADC MUX0:AMIC
+AMIC MUX0:ADC2
+ADC2 Volume:10
+
+stereo Profile:mmitest_Spk
+TFA_CHIP_SELECTOR:1
+QUAT_MI2S_RX_DL_HL Switch:1
+QUAT_MI2S_RX Port Mixer SLIM_0_TX:1
+
+tc 11
+#HeadSet Mic to  Speakers AFE loopback   close spk
+!AfeLoop
+Txdevice:5
+Rxdevice:35
+
+disable
+AIF1_CAP Mixer SLIM TX0:0
+SLIM_0_TX Channels:ZERO
+CDC_IF TX0 MUX:ZERO
+ADC MUX0:ZERO
+AMIC MUX0:ZERO
+ADC2 Volume:0
+
+stereo Profile:music_P
+TFA_CHIP_SELECTOR:0
+QUAT_MI2S_RX_DL_HL Switch:0
+QUAT_MI2S_RX Port Mixer SLIM_0_TX:0
+
+tc 2
+#headset mic to rec                      open rec
+!AfeLoop
+Txdevice:5
+Rxdevice:35
+
+enable
+AIF1_CAP Mixer SLIM TX0:1 
+SLIM_0_TX Channels:One
+CDC_IF TX0 MUX:DEC0
+ADC MUX0:AMIC
+AMIC MUX0:ADC2
+ADC2 Volume:10
+
+stereo Profile:handset
+TFA_CHIP_SELECTOR:2
+QUAT_MI2S_RX_DL_HL Switch:1
+QUAT_MI2S_RX Port Mixer SLIM_0_TX:1
+
+tc 22
+#headset mic to rec                       close rec
+!AfeLoop
+Txdevice:5
+Rxdevice:35
+
+disable
+AIF1_CAP Mixer SLIM TX0:0
+SLIM_0_TX Channels:ZERO
+CDC_IF TX0 MUX:ZERO
+ADC MUX0:ZERO
+AMIC MUX0:ZERO
+ADC2 Volume:0
+
+stereo Profile:music_P
+TFA_CHIP_SELECTOR:0
+QUAT_MI2S_RX_DL_HL Switch:0
+QUAT_MI2S_RX Port Mixer SLIM_0_TX:0
+
+tc 3
+# AMIC1 to Headset Speakers AFE loopback   open mic1
+!AfeLoop
+Txdevice:5
+Rxdevice:5
+
+enable
+AIF1_CAP Mixer SLIM TX7:1
+SLIM_0_TX Channels:One
+CDC_IF TX7 MUX:DEC7
+ADC MUX7:AMIC
+AMIC MUX7:ADC1
+ADC1 Volume:12
+
+SLIM RX2 MUX:AIF4_PB
+SLIM RX3 MUX:AIF4_PB
+SLIM_6_RX Channels:Two
+RX INT1_2 MUX:RX2
+RX INT2_2 MUX:RX3
+RX INT1 DEM MUX:CLSH_DSM_OUT
+RX INT2 DEM MUX:CLSH_DSM_OUT
+RX1 Digital Volume:84
+RX2 Digital Volume:84
+
+SLIMBUS6_DL_HL Switch:1
+SLIMBUS_6_RX Port Mixer SLIM_0_TX:1
+
+tc 33
+# AMIC1 to Headset Speakers AFE loopback   close mic1
+!AfeLoop
+Txdevice:5
+Rxdevice:5
+
+disable
+AIF1_CAP Mixer SLIM TX7:0
+SLIM_0_TX Channels:ZERO
+SLIM TX7 MUX:ZERO
+ADC MUX7:ZERO
+AMIC MUX7:ZERO
+ADC1 Volume:0
+
+SLIM RX2 MUX:ZERO
+SLIM RX3 MUX:ZERO
+SLIM_6_RX Channels:ZERO
+RX INT1_2 MUX:ZERO
+RX INT2_2 MUX:ZERO
+RX INT1 DEM MUX:CLSH_DSM_OUT
+RX INT2 DEM MUX:CLSH_DSM_OUT
+RX1 Digital Volume:0
+RX2 Digital Volume:0
+
+SLIMBUS6_DL_HL Switch:0
+SLIMBUS_6_RX Port Mixer SLIM_0_TX:0
+
+tc 4
+# AMIC2 to Headset Speakers AFE loopback   open mic2
+!AfeLoop
+Txdevice:5
+Rxdevice:5
+
+enable
+AIF1_CAP Mixer SLIM TX7:1
+SLIM_0_TX Channels:One
+CDC_IF TX7 MUX:DEC7
+ADC MUX7:AMIC
+AMIC MUX7:ADC3
+ADC3 Volume:12
+
+SLIM RX2 MUX:AIF4_PB
+SLIM RX3 MUX:AIF4_PB
+SLIM_6_RX Channels:Two
+RX INT1_2 MUX:RX2
+RX INT2_2 MUX:RX3
+RX INT1 DEM MUX:CLSH_DSM_OUT
+RX INT2 DEM MUX:CLSH_DSM_OUT
+RX1 Digital Volume:84
+RX2 Digital Volume:84
+
+SLIMBUS6_DL_HL Switch:1
+SLIMBUS_6_RX Port Mixer SLIM_0_TX:1
+
+tc 44
+# AMIC2 to Headset Speakers AFE loopback   close mic2
+!AfeLoop
+Txdevice:5
+Rxdevice:5
+
+disable
+AIF1_CAP Mixer SLIM TX7:0
+SLIM_0_TX Channels:ZERO
+CDC_IF TX7 MUX:ZERO
+ADC MUX7:ZERO
+AMIC MUX7:ZERO
+ADC3 Volume:0
+
+SLIM RX2 MUX:ZERO
+SLIM RX3 MUX:ZERO
+SLIM_6_RX Channels:ZERO
+RX INT1_2 MUX:ZERO
+RX INT2_2 MUX:ZERO
+RX INT1 DEM MUX:CLSH_DSM_OUT
+RX INT2 DEM MUX:CLSH_DSM_OUT
+RX1 Digital Volume:0
+RX2 Digital Volume:0
+
+SLIMBUS6_DL_HL Switch:0
+SLIMBUS_6_RX Port Mixer SLIM_0_TX:0
+
+tc 5
+# AMIC3 to Headset Speakers AFE loopback   open mic3
+!AfeLoop
+Txdevice:5
+Rxdevice:5
+
+enable
+AIF1_CAP Mixer SLIM TX7:1
+SLIM_0_TX Channels:One
+CDC_IF TX7 MUX:DEC7
+ADC MUX7:AMIC
+AMIC MUX7:ADC4
+ADC4 Volume:12
+
+SLIM RX2 MUX:AIF4_PB
+SLIM RX3 MUX:AIF4_PB
+SLIM_6_RX Channels:Two
+RX INT1_2 MUX:RX2
+RX INT2_2 MUX:RX3
+RX INT1 DEM MUX:CLSH_DSM_OUT
+RX INT2 DEM MUX:CLSH_DSM_OUT
+RX1 Digital Volume:84
+RX2 Digital Volume:84
+
+SLIMBUS6_DL_HL Switch:1
+SLIMBUS_6_RX Port Mixer SLIM_0_TX:1
+
+tc 55
+# AMIC3 to Headset Speakers AFE loopback   close mic3
+!AfeLoop
+Txdevice:5
+Rxdevice:5
+
+disable
+AIF1_CAP Mixer SLIM TX7:0
+SLIM_0_TX Channels:ZERO
+CDC_IF TX7 MUX:ZERO
+ADC MUX7:ZERO
+AMIC MUX7:ZERO
+ADC4 Volume:0
+
+SLIM RX2 MUX:ZERO
+SLIM RX3 MUX:ZERO
+SLIM_6_RX Channels:ZERO
+RX INT1_2 MUX:ZERO
+RX INT2_2 MUX:ZERO
+RX INT1 DEM MUX:CLSH_DSM_OUT
+RX INT2 DEM MUX:CLSH_DSM_OUT
+RX1 Digital Volume:0
+RX2 Digital Volume:0
+
+SLIMBUS6_DL_HL Switch:0
+SLIMBUS_6_RX Port Mixer SLIM_0_TX:0

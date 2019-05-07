@@ -1,0 +1,15 @@
+# Copyright (c) 2016, nubia. All rights reserved.
+#
+# init.dmapp.rc
+
+
+
+#NUBIA: dm instructions
+service dmapp  /vendor/bin/dmapp
+    class main
+    seclabel u:r:dm:s0
+    group  system diag oem_2901 usb root shell bluetooth wifi sdcard_rw sdcard_r media_rw
+
+#Start Dmapp Services
+on boot
+    start dmapp

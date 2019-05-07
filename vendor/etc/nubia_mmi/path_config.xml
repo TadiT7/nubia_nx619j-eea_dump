@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/*
+ * Copyright (c) 2016, Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ */
+-->
+
+<resources>
+
+    <!--  mmi resource -->
+    <string name="mmi_agent">/vendor/bin/nubia_mmi_agent</string>
+    <string name="mmi_agent32">/vendor/bin/nubia_mmi_agent32</string>
+    <string name="mmi_agent64">/vendor/bin/nubia_mmi_agent64</string>
+    <string name="mmi_diag">/vendor/bin/nubia_mmi_diag</string>
+    <string name="mmi_log_daemon">/system/bin/logcat</string>
+    <string name="mmi_socket">/dev/socket/nubia_mmi</string>
+
+    <string name="mmi_lib_base">/vendor/lib/</string>
+    <string name="mmi_lib64_base">/vendor/lib64/</string>
+    <string name="mmi_ftm_ap_dir">/cache/FTM_AP/</string>
+
+    <!--  wifi resource -->
+    <string name="wifi_driver">/vendor/lib/modules/qca_cld3_wlan.ko</string>
+    <string name="wifi_ifconfig">/vendor/bin/ifconfig</string>
+    <string name="wifi_iwlist">/vendor/bin/iwlist</string>
+    <string name="wifi_iw">/system/bin/iw</string>
+
+    <!--  bluetooth resource -->
+    <string name="bdt">/vendor/bin/bdt</string>
+
+    <!--  audio resource -->
+    <string name="mm_audio_TIsmartpa_cal">/system/bin/tas2555-ftc</string>
+	<string name="mm_audio_NXPsmartpa_cal">/system/bin/climax</string>
+    <string name="mm_audio_ftm">/system/vendor/bin/mm-audio-ftm</string>
+    <string name="ftm_test_config">/system/vendor/etc/ftm_test_config</string>
+    <string name="qualsound_wav">/system/vendor/etc/nubia_mmi/qualsound.wav</string>
+
+    <!--  fm resource -->
+    <string name="fmfactorytest">/system/bin/fmfactorytest</string>
+
+    <!--  sim resource -->
+    <string name="qmi_simple_ril_test">/system/vendor/bin/qmi_simple_ril_test</string>
+
+    <!--  gps resource -->
+    <string name="garden_app">/vendor/bin/garden_app</string>
+
+    <!--  battery resource -->
+	<string name="usb_type">/sys/class/power_supply/usb/real_type</string>
+	<string name="usb_present">/sys/class/power_supply/usb/present</string>
+	<string name="update_now">/sys/class/power_supply/battery/update_now</string>
+	<string name="battery_temp">/sys/class/power_supply/battery/temp</string>
+    <string name="battery_health">/sys/class/power_supply/battery/health</string>
+    <string name="battery_status">/sys/class/power_supply/battery/status</string>
+	<string name="battery_present">/sys/class/power_supply/battery/present</string>
+	<string name="battery_capacity">/sys/class/power_supply/battery/capacity</string>
+	<string name="battery_technology">/sys/class/power_supply/battery/technology</string>
+    <string name="battery_voltage_now">/sys/class/power_supply/battery/voltage_now</string>
+    <string name="direct_charger">/sys/class/power_supply/neo-charger/present</string>
+    <string name="battery_current_now">/sys/class/power_supply/neo-battery/current_now</string>
+
+    <!--  memory resource -->
+    <string name="meminfo">/proc/meminfo</string>
+
+    <!--  cpu resource -->
+    <string name="cpu_present">/sys/devices/system/cpu/present</string>
+
+    <!--  flashlight resource -->
+    <string name="flashlight">/sys/class/leds/torch-light0/brightness</string>
+    <string name="flashlight_torch_0">/sys/class/leds/led:torch_0/brightness</string>
+    <string name="flashlight_torch_1">/sys/class/leds/led:torch_1/brightness</string>
+    <string name="leds_switch">/sys/class/leds/led:switch/brightness</string>
+    <string name="leds_switch_0">/sys/class/leds/led:switch_0/brightness</string>
+</resources>

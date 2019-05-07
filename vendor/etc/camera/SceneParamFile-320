@@ -1,0 +1,92 @@
+
+//AI camera Parameter thresholds and comments
+
+//EDGE_MODE,                         Threshold： 0-3   Value:0>off, Value:1>FAST, //Value:2>HIGH_QUALITY, Value:3>ZERO_SHUTTER_LAG
+//KEY_QC_SHARPNESS,                  Threshold： 0-6
+//KEY_QC_USE_SATURATION,             Threshold： 0-10
+//COLOR_CORRECTION_GAINS,            Threshold:  [2250, 2500, 2750, ..., 7750]
+//CONTROL_AE_EXPOSURE_COMPENSATION,   
+//TONEMAP_MODE,
+//TONEMAP_GAMMA,       
+//TONEMAP_CURVE,                     format:  [0 1 1 0][0 0 1 1][0 0.5 1 0.5]
+//CONTROL_SCENE_MODE,
+//PRETTY,                            Threshold： 0-10
+
+
+//AI camera parameter settings
+
+//1:portrait  
+//2:animal         (Dogs, cats, cows, sheep, rabbits, monkeys, birds, fish)
+//3:flower         (Flowers)
+//4:green_plants   (green leaves, autumn leaves)
+//5:scenery        (The blue sky, the sea, the rainbow, the waterfall, the desert, the snow scenery, 
+//                  the mountain, the distant view, the green plants, the tall buildings.)
+//6:sunrise_sunset (Sunrise and sunset)
+//7:night_scene    (Neon lights, fireworks, night sky)
+//8:food           (Food, barbecue)
+//9:text 
+//10:microspur
+
+//-------1-------- 
+NAME:portrait,
+                 
+KEY_QC_SHARPNESS:2,            
+KEY_QC_USE_SATURATION:5, 
+PRETTY:3;    
+
+//-------2--------
+NAME:animal,
+                
+KEY_QC_SHARPNESS:2,            
+KEY_QC_USE_SATURATION:6;
+
+//-------3--------
+NAME:flower,
+          
+KEY_QC_SHARPNESS:3,            
+KEY_QC_USE_SATURATION:6;
+
+//-------4--------
+NAME:green_plants,
+                 
+KEY_QC_SHARPNESS:3,            
+KEY_QC_USE_SATURATION:7;
+
+//-------5--------
+NAME:scenery, 
+                
+KEY_QC_SHARPNESS:3,            
+KEY_QC_USE_SATURATION:7;
+
+//-------6--------
+NAME:sunrise_sunset, 
+                  
+KEY_QC_SHARPNESS:1,            
+KEY_QC_USE_SATURATION:6;
+
+//-------7--------
+NAME:night_scene,
+                 
+KEY_QC_SHARPNESS:2,            
+KEY_QC_USE_SATURATION:6;
+
+//-------8--------
+NAME:food, 
+                
+KEY_QC_SHARPNESS:2,            
+KEY_QC_USE_SATURATION:7;
+
+
+//-------9--------
+NAME:text,
+
+KEY_QC_SHARPNESS:2,            
+KEY_QC_USE_SATURATION:6;
+
+//-------10--------
+NAME:microspur,
+                  
+KEY_QC_SHARPNESS:2,            
+KEY_QC_USE_SATURATION:6;
+
+

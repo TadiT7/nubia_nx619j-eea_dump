@@ -1,0 +1,1 @@
+gfx input view webview wm am sm audio video camera hal app res dalvik rs bionic power pm ss network sched irq freq idle disk mmc load sync workq memreclaim regulators binder_driver binder_lock pagecache

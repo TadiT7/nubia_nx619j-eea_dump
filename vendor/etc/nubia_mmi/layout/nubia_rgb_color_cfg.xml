@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2015 Qualcomm Technologies, Inc. All Rights Reserved.
+    Qualcomm Technologies Proprietary and Confidential.
+-->
+<!--
+ Copyright (c) 2016, nubia
+ File name:nubia_main.xml
+ Witer: baoqi
+ Date: 2016-08-31
+ Abstract: for nubia ui main menu
+-->
+<layout>
+  <button
+        name="title"
+        text="rgb_color_cfg"
+        onclick="rgb_color_cfg"
+        w_rel="100"
+        h_rel="15"
+        x_rel="0"
+        y_rel="0"
+        color="0x4B67B37D"/>
+
+  <button
+        name="white"
+        text="white"
+        onclick="rgb_color_cfg_white"
+        w_rel="100"
+        h_rel="10"
+        x_rel="0"
+        y_rel="30"
+        color="0x228b229f"/>
+
+  <button
+        name="black"
+        text="black"
+        onclick="rgb_color_cfg_black"
+        w_rel="100"
+        h_rel="10"
+        x_rel="0"
+        y_rel="42"
+        color="0x228b229f"/>
+
+  <button
+        name="golden"
+        text="golden"
+        onclick="rgb_color_cfg_golden"
+        w_rel="100"
+        h_rel="10"
+        x_rel="0"
+        y_rel="54"
+        color="0x228b229f"/>
+
+    <button
+        name="blue"
+        text="blue"
+        onclick="rgb_color_cfg_blue"
+        w_rel="100"
+        h_rel="10"
+        x_rel="0"
+        y_rel="66"
+        color="0x228b229f"/>
+
+  <button
+        name=""
+        text=""
+        onclick=""
+        w_rel="100"
+        h_rel="10"
+        x_rel="0"
+        y_rel="78"
+        color="0x000000ff"/>
+  <button
+        name="show_result"
+        text="cfg_result"
+        w_rel="100"
+        h_rel="10"
+        x_rel="0"
+        y_rel="90"
+        color="0x000000ff"/>
+
+  <parent
+	name="nubia_sensor_cal_index.xml" />
+</layout>
